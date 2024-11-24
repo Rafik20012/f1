@@ -1,0 +1,94 @@
+/* Body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('/static/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* Container styling for the form box */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for overlay effect */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Makes background image slightly blurred under the container */
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input and Select styling */
+input, select {
+    width: 350px;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 300px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result styling */
+.result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result h2 {
+    font-size: 20px;
+    color: #007bff;
+}
+
+.result p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}

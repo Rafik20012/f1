@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Age Group</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='landing_style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Age Group</h1>
+        <div class="age-options">
+            <a href="/calorie_tracker?age_group=20-30" class="age-group">
+                <img src="{{ url_for('static', filename='images/20-30.jpg') }}" alt="Age Group 20-30">
+                <span>20 - 30</span>
+            </a>
+            <a href="/calorie_tracker?age_group=30-40" class="age-group">
+                <img src="{{ url_for('static', filename='images/30-40.jpg') }}" alt="Age Group 30-40">
+                <span>30 - 40</span>
+            </a>
+            <a href="/calorie_tracker?age_group=40-50" class="age-group">
+                <img src="{{ url_for('static', filename='images/40-50.jpg') }}" alt="Age Group 40-50">
+                <span>40 - 50</span>
+            </a>
+            <a href="/calorie_tracker?age_group=50-60" class="age-group">
+                <img src="{{ url_for('static', filename='images/50-60.jpg') }}" alt="Age Group 50-60">
+                <span>50 - 60</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

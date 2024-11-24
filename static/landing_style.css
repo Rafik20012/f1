@@ -1,0 +1,79 @@
+/* Body and container styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Age options layout */
+.age-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Age group styling */
+.age-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 550px;
+    background-color: #007bff;
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Age group image styling */
+.age-group img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+}
+
+/* Age group text styling */
+.age-group span {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Hover effect */
+.age-group:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.age-group:hover img {
+    opacity: 0.5;
+}

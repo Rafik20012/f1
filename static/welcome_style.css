@@ -1,0 +1,40 @@
+/* Full-page background and centered content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+    background: url('/static/images/cover.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.welcome-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Overlay for text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 24px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
